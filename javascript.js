@@ -53,13 +53,13 @@ var pass = document.getElementById('password-container');
 var closeBtn = document.getElementsByClassName("close")[0];
 
 window.onclick = function(event) {
-  if (event.target == pass) {
-    pass.style.display = "none";
-    document.getElementById('passwordInput').value = '';
-  }
+    if (event.target == pass) {
+        pass.style.display = "none";
+        document.getElementById('passwordInput').value = '';
+    }
 };
 
 closeBtn.onclick = function() {
-  pass.style.display = "none";
-  document.getElementById('passwordInput').value = '';
+    pass.style.display = "none";
+    document.getElementById('passwordInput').value = '';
 };
