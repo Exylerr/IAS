@@ -13,6 +13,7 @@ document.getElementById('withautho').addEventListener('click', function() {
 
     document.getElementById('submitPassword').addEventListener('click', function() {
         var password = document.getElementById('passwordInput').value;
+        
         if (password === 'qwerty') {
             var fileUrl = 'PUP Website.pdf';
             
@@ -34,6 +35,7 @@ document.getElementById('withautho').addEventListener('click', function() {
     
             document.getElementById('password-container').style.display = "none";
             document.getElementById('passwordInput').value = '';
+            
         } else {
             alert('Incorrect password. Please try again.');
             
