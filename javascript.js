@@ -37,6 +37,7 @@ document.getElementById('submitPassword').addEventListener('click', function() {
         document.getElementById('passwordInput').value = '';
     } else {
         alert('Incorrect password. Please try again.');
+        document.getElementById('passwordInput').focus();
         document.getElementById('passwordInput').value = '';
     }
 });
@@ -45,6 +46,12 @@ var pass = document.getElementById('password-container');
 window.onclick = function(event) {
   (event.target == pass)
 }
+
+document.getElementById('passwordInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        document.getElementById('submitPassword').click();
+    }
+});
 
 var closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.onclick = function() {
