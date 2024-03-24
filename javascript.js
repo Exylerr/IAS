@@ -50,12 +50,12 @@ document.getElementById('passwordInput').addEventListener('keypress', function(e
 });
 
 var pass = document.getElementById('password-container');
-window.onclick = function(event) {
-  (event.target == pass)
+    window.onclick = function(event) {
+    (event.target == pass)
 }
 
 var closeBtn = document.getElementsByClassName("close")[0];
-closeBtn.onclick = function() {
-  pass.style.display = "none";
-  document.getElementById('passwordInput').value = '';
+    closeBtn.onclick = function() {
+        pass.style.display = "none";
+        document.getElementById('passwordInput').value = '';
 }
