@@ -34,21 +34,20 @@ document.getElementById('submitPassword').addEventListener('click', function() {
         });
 
         document.getElementById('password-container').style.display = "none";
+        document.getElementById('passwordInput').value = '';
     } else {
         alert('Incorrect password. Please try again.');
-
-    document.getElementById('passwordInput').value = '';
+        document.getElementById('passwordInput').value = '';
     }
 });
 
 var pass = document.getElementById('password-container');
 window.onclick = function(event) {
-  if (event.target == pass) {
-    pass.style.display = "fixed";
-  }
+  (event.target == pass)
 }
 
 var closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.onclick = function() {
   pass.style.display = "none";
+  document.getElementById('passwordInput').value = '';
 }
